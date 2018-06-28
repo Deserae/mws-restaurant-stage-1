@@ -241,6 +241,12 @@ nav h1 a {
   text-transform: uppercase;
 	width: 90%;
 }
+
+/*new section i added*/
+#restaurant-and-review-container {
+  
+}
+
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
@@ -300,7 +306,7 @@ nav h1 a {
     height: 50px;
   }
 
-  
+
 
 
 }
