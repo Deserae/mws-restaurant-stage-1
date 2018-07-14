@@ -8,12 +8,15 @@ var markers = []
 
 if (navigator.serviceWorker) {
 
-    navigator.serviceWorker.register('/js/sw.js').then(function() {
-      console.log('Registration worked!');
-    }).catch(function() {
-      console.log('Registration failed!');
-    });
-  }
+  navigator.serviceWorker.register('./sw.js').then(function(registration) {
+    console.log('Registration worked!' + registration.scope);
+  }).catch(function() {
+    console.log('Registration failed!');
+  });
+}
+
+
+
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
